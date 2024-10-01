@@ -1,0 +1,124 @@
+* {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #131416;
+}
+
+/* welcome-text */
+.welcome-text {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.typing-effect {
+  border-right: 3px solid white;
+  white-space: nowrap;
+  width: 100%;
+  letter-spacing: 10px;
+  overflow: hidden;
+  font-size: 30px;
+  animation: typing 3s steps(7, end), blink-caret 0.75s step-end infinite;
+}
+
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.transition-effect {
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 13rem;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Click Pop Up CSS */
+
+.click-pop-up {
+  border-radius: 1rem;
+  background-color: #8ac80b;
+  top: 60%;
+  left: 40%;
+  position: absolute;
+  transform: translate(-50%, -50%) translateY(20px);
+  text-transform: uppercase;
+  width: 20%;
+  height: 5%;
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0;
+  transition: opacity 5s ease; /* 5s fade-in effect */
+}
+/* Select Option CSS */
+
+.select-option {
+  display: none;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.select-option-list {
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.select-option-list-name {
+  padding: 15px;
+  margin: 20px;
+  cursor: pointer;
+  transition: ease 1s;
+  background-color: #8ac80b;
+  border-radius: 1rem;
+  width: 20%;
+  height: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.select-option-list-name a {
+  text-decoration: none;
+}
+
+.select-option-list-name:hover {
+  scale: 1.2;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #131416;
+}
