@@ -1,2 +1,2 @@
 # Amol Deep Gupta Port-folio
-amolDeepGupta.github.io
+amoldeepgupta.github.io
