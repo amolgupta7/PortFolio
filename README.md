@@ -1,3 +1,3 @@
-# Port-folio
-#Amol Deep Gupta
+# Portfolio
+# Amol Deep Gupta
 amoldeepgupta.github.io
