@@ -24,13 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 5000); // 5000 milliseconds = 5 seconds
   
   typingText && typingText.addEventListener("animationend", () => {
-    document.addEventListener("click", () => {
       welcomeText.classList.add("hidden");
       welcomeText.classList.add("transition-effect");
-      clickPopUp.classList.add("hidden");
+      // clickPopUp.classList.add("hidden");
       setTimeout(() => {
         selectOption.style.display = "flex";
-      }, 3000);
+      }, 2000);
     });
-  });
 });
