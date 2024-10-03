@@ -103,3 +103,18 @@ body {
   margin: 10px;
   background-color: #131416;
 }
+
+/* Media-queries */
+
+@media screen and (max-width:767px) {
+  
+  .select-option-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select-option-list-name {
+    width: 50%;
+  }
+
+}
