@@ -317,6 +317,7 @@ a {
     display: none;
     width: 100%;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .nav-panel-container {
