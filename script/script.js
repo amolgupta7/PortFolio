@@ -28,19 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const crossIcon = document.querySelector(".cross-icon");
   const navPanel = document.querySelector(".nav-panel");
   const listClicks = document.querySelectorAll(".nav-list-name");
+  const body = document.body;
 
   menuIconClick.addEventListener("click", () => {
     navPanel.style.display = "flex";
     crossIcon.style.display = "flex";
+    body.classList.add("no-scroll");
   });
 
   crossIcon.addEventListener("click", () => {
     navPanel.style.display = "none";
+    body.classList.remove("no-scroll");
   });
 
   listClicks.forEach((listClick) => {
     listClick.addEventListener("click", () => {
       navPanel.style.display = "none";
+      body.classList.remove("no-scroll");
     });
   });
 });
