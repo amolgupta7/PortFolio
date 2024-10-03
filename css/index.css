@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #131416;
+  background: #292a2b;
 }
 
 /* welcome-text */
@@ -101,7 +101,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  background-color: #131416;
+  background-color: #292a2b;
 }
 
 /* Media-queries */
