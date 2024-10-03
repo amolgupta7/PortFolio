@@ -37,6 +37,7 @@ a {
 /* About Me CSS */
 #icon {
   cursor: pointer;
+  color: #e0e0e0;
 }
 
 .about-me {
@@ -111,7 +112,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: #e0e0e0;
   border-radius: 2rem;
 }
 
@@ -295,8 +295,7 @@ a {
 }
 /* Media-queries */
 
-@media screen and (max-width:480px) {
-
+@media screen and (max-width: 480px) {
   .cross-icon {
     display: none;
     justify-content: flex-end;
@@ -308,18 +307,19 @@ a {
   }
 
   .nav-panel {
-      background-color: #292a2b;
-      height: 100%;
-      position: absolute;
-      z-index: 101;
-      display: none;
-      width: 60%;
-      flex-direction: column;
+    background-color: #292a2b;
+    height: 100%;
+    position: absolute;
+    z-index: 101;
+    display: none;
+    width: 60%;
+    flex-direction: column;
   }
 
-  .nav-list-left, .nav-list-right {
+  .nav-list-left,
+  .nav-list-right {
     display: none;
-  } 
+  }
 
   .nav-bar {
     display: flex;
@@ -332,22 +332,47 @@ a {
     margin-left: 20px;
     align-items: center;
   }
-  
+
   .nav-list {
-     list-style: none;
-     padding:0;
-     width: 100%; 
+    list-style: none;
+    padding: 0;
+    width: 100%;
   }
 
   .nav-list-name {
-   justify-content: left;
-   padding-left: 4rem;
-   align-items: center;
-   display: flex;
-   background-color: #8ac80b;
-   height: 25%;
-   margin: 10px;
-   border-radius: 10px;
+    justify-content: left;
+    padding-left: 5rem;
+    align-items: center;
+    display: flex;
+    background-color: #8ac80b;
+    height: 25%;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us-content{
+    flex-direction: row;
+    width: 80%;
+  }
+  .about-me {
+    height: auto;
+  }
+  .about-me-my-photo{
+    background:none;
+    padding: 0; 
+  }
+  .about-me-my-photo img {
+    width: 100%;
+  }
+  .about-me-main-container h1 {
+    justify-content: center;
+    padding-left: 0;
   }
 
 }
