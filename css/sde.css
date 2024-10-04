@@ -61,19 +61,18 @@ a {
   justify-items: center;
 }
 
-.about-me-my-photo {
+/* .about-me-my-photo {
   padding: 2rem;
-  height: 65%;
-  width: 20rem;
+  height: 23rem;
+  width: 23rem;
   background-color: white;
-  border-radius: 2rem;
-}
+  border-radius: 100%;
+} */
 
 .about-me-my-photo img {
-  object-fit: contain;
-  width: 120%;
-  height: 130%;
-  border-radius: 2rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 100%;
 }
 
 .content-heading {
@@ -323,7 +322,8 @@ a {
     padding: 0;
   }
   .about-me-my-photo img {
-    width: 100%;
+    width: 23rem;
+    height: 23rem;
   }
   .about-me-main-container h1 {
     justify-content: center;
