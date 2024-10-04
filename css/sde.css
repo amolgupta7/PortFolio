@@ -77,23 +77,18 @@ a {
 }
 
 .content-heading {
-  font-size: 20px;
+  font-size: 5rem;
   margin: 0;
+  text-align: justify;
+  color: #8ac80b;
 }
 
 .content-heading-1 {
   font-size: 40px;
   margin: 0;
-  text-align: center;
-}
-
-.content-heading-1-a {
-  font-size: 40px;
-  margin: 0;
   text-align: right;
   color: #8ac80b;
 }
-
 .content-para {
   font-size: 20px;
   text-align: justify;
@@ -317,7 +312,7 @@ a {
 @media screen and (max-width: 1024px) {
   .about-me-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .contact-us-content {
     flex-direction: row;
