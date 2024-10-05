@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     typingText.addEventListener("animationend", () => {
       welcomeText.classList.add("hidden");
       welcomeText.classList.add("transition-effect");
-      // clickPopUp.classList.add("hidden");
       setTimeout(() => {
         selectOption.style.display = "flex";
       }, 2000);
