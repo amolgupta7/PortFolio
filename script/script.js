@@ -46,4 +46,24 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("no-scroll");
     });
   });
-});
+
+
+  
+  // const projects = document.querySelector('project-container');
+  // projects.forEach((project, index)=> {
+  //   const projectDiv = document.createElement('div');
+  //   projectDiv.classList.add(`project-${index}`);
+
+  //   const projectDiv = document.createElement('div');
+  //   projectDiv.classList.add(`project-${index}`);
+
+  //   const projectDiv = document.createElement('div');
+  //   projectDiv.classList.add(`project-${index}`);
+
+  });
+
+
+
+
+
+// });

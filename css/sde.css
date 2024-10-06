@@ -34,12 +34,12 @@
 }
 
 .nav-title {
-  font-size: 34px;
+  font-size: 42px;
   margin: 5px 0 0 0;
 }
 
 .nav-title-1 {
-  font-size: 34px;
+  font-size: 42px;
   margin: 5px 0 0 0;
   color: #79b205;
 }
@@ -73,9 +73,14 @@ a {
 }
 
 /* About Me CSS */
-#icon {
+.contact-us-content a img {
   cursor: pointer;
-  color: #e0e0e0;
+  color: #fff;
+  transition: .5s ease;
+}
+
+.contact-us-content a img:hover {
+  scale: 1.5;
 }
 
 .about-me {
@@ -105,7 +110,7 @@ a {
   font-size: 5rem;
   margin: 0;
   text-align: left;
-  color: #e0e0e0;
+  color: #fff;
 }
 
 .content-para {
@@ -152,7 +157,7 @@ a {
   flex-direction: column;
   justify-content: center;
   border-radius: 4rem;
-  background-color: #e0e0e0;
+  background-color: #fff;
 }
 
 .work-ex-main-content-left,
@@ -177,7 +182,7 @@ a {
 }
 
 .line {
-  border-left: solid 1px #e0e0e0;
+  border-left: solid 1px #fff;
   margin-left: 25px;
   height: 10rem;
 }
@@ -207,35 +212,61 @@ a {
 }
 
 /* content-3 */
-.project {
-  background-color: #e0e0e0;
+.projects {
+  background-color: #09090a;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
-.project-number-1,
-.project-number-2,
-.project-number-3 {
-  background-color: #09090a;
-  color: #e0e0e0;
-  width: 15rem;
-  height: 15rem;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 2rem;
-  font-weight: 400;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.projects h1 {
+  background-color: #79b205;
 }
 
-.project-row-1 {
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  background-color: #fff ;
+  height: 100%;
+  width: 100%;
+  min-height: 18rem;
+  justify-self: center; 
+  border-radius: 1rem;
+  cursor: pointer;
 }
+
+.project-div:nth-child(even) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.project-div:nth-child(odd) {
+  grid-column: 1;
+}
+
+.project-name {
+  border-radius: 100%;
+  color: #79b205;
+  font-size: 36px;
+  text-align: center;
+}
+
+.project-description {
+  color: #09090a;
+  font-size: 20px;
+  text-align: center;
+}
+
+.project-div a {
+    text-align: center;
+}
+
 
 /* transition */
 .reveal {
@@ -342,6 +373,19 @@ a {
   .work-ex-main-content-right,
   .work-ex-main-content-left {
     border-radius: 3rem;
+  }
+
+  .project-1, .project-2, .project-3 {
+    flex-direction: column;
+    height: 16rem;
+  }
+
+  .project-description {
+    height: 100%;
+  }
+
+  .project-name {
+    width: 100%;
   }
 }
 

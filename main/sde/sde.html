@@ -15,10 +15,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
     <script src="../../script/script.js"></script>
   </head>
 
@@ -26,43 +22,50 @@
     <main class="main-container">
       <nav class="nav-panel">
         <div class="nav-panel-container">
-          <i class="uil uil-times cross-icon" style="font-size: 36px"></i>
+          <div class="cross-icon">
+            <img src="../../assets/cross_icon.png" alt="" />
+          </div>
+
           <ul class="nav-list">
             <li class="nav-list-name">
-             <a href="#">Home</a>
+              <a href="#">Home</a>
             </li>
             <li class="nav-list-name">
-             <a href="#about-me">About Me</a>
+              <a href="#about-me">About Me</a>
             </li>
             <li class="nav-list-name">
-            <a href="#work-ex">Work</a>
+              <a href="#work-ex">Work</a>
             </li>
             <li class="nav-list-name">
-            <a href="#projects">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           </ul>
         </div>
       </nav>
       <nav class="nav-bar">
-        <i class="uil uil-bars nav-icon" style="font-size: 36px"></i>
+        <img src="../../assets/menu_icon.png" alt="" class="nav-icon" />
         <ul class="nav-list-left">
           <li class="nav-list-left-name"><a href="#">Home</a></li>
           <li class="nav-list-left-name"><a href="#about-me">About Me</a></li>
         </ul>
-        <h1 class="nav-title"><span class="nav-title-1">Amol</span>&nbsp;Gupta</h1>
+        <h1 class="nav-title">
+          <span class="nav-title-1">Amol</span>&nbsp;Gupta
+        </h1>
         <ul class="nav-list-right">
           <li class="nav-list-right-name"><a href="#work-ex">Work</a></li>
           <li class="nav-list-right-name"><a href="#projects">Projects</a></li>
         </ul>
       </nav>
       <section class="home" id="home">
-          <div class="home-container">
-            <div class="home-content">
-              <h3>Code, capture, create—living life in full frame! <h3>
-            </div>
-            <div class="home-photo">
-              <img src="../../assets/kody_onewheeling_flying_blue.webp" alt="myPhoto" />
-            </div>
+        <div class="home-container">
+          <div class="home-content">
+            <h3>Code, capture, create—living life in full frame!</h3>
+          </div>
+          <div class="home-photo">
+            <img
+              src="../../assets/kody_onewheeling_flying_blue.webp"
+              alt="myPhoto"
+            />
           </div>
         </div>
       </section>
@@ -76,50 +79,41 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="uil uil-github" id="icon" style="font-size: 36px"></i>
+                <img src="../../assets/github_icon.png" alt="" />
               </a>
               <a
                 href="https://www.linkedin.com/in/amol-deep-gupta-bb9328117/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i
-                  class="uil uil-linkedin"
-                  id="icon"
-                  style="font-size: 36px"
-                ></i>
+                <img src="../../assets/linkedin_icon.png" alt="" />
               </a>
               <a
                 href="https://www.instagram.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i
-                  class="uil uil-instagram-alt"
-                  id="icon"
-                  style="font-size: 36px"
-                ></i>
+                <img src="../../assets/insta_icon.png" alt="" />
               </a>
-              <!-- <a href="https://x.com/_amoldeepgupta" target="_blank" rel="noopener noreferrer">
-                <i class="uil uil-twitter" id="icon" style="font-size: 36px"></i>
-            </a> -->
+
               <a
                 href="mailto:gupta07amol@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="gupta07amol@gmail.com"
               >
-                <i
-                  class="uil uil-envelope"
-                  id="icon"
-                  style="font-size: 36px"
-                ></i>
+                <img src="../../assets/mail_icon.png" alt="" />
               </a>
             </div>
             <div class="about-me-content">
-              <h4 class="content-heading">Software Developer<h3>
+              <h3 class="content-heading">Software Developer</h3>
               <p class="content-para">
-                who brings ideas to life with React, JavaScript, and Java. When not coding, you’ll find me capturing moments through my camera lens or smashing it on the badminton court. Love diving into a good movie or series and always up for learning something new. Balancing tech, creativity, and a little fun keeps life exciting!
+                who brings ideas to life with React, JavaScript, and Java. When
+                not coding, you’ll find me capturing moments through my camera
+                lens or smashing it on the badminton court. Love diving into a
+                good movie or series and always up for learning something new.
+                Balancing tech, creativity, and a little fun keeps life
+                exciting!
               </p>
             </div>
             <div class="about-me-my-photo">
@@ -192,20 +186,42 @@
           </div>
         </div>
       </section>
-      <section class="project" id="projects">
-        <h1 class="heading">Project</h1>
-        <div class="project-container">
-          <div class="project-row-1">
-            <div class="project-number-1 reveal">Work in Progress</div>
-            <div class="project-number-2 reveal">Work in Progress</div>
-            <div class="project-number-3 reveal">Work in Progress</div>
+      <section class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="projects-container">
+          <div class="project-div reveal">
+            <div class="project-name">Hope Speech Detection</div>
+            <div class="project-description">
+              Analyzed over 22,000 YouTube comments using the Roberta-base model to detect hope speech. This project highlights hope's role in promoting well-being and supports discussions on equality, diversity, and inclusion.
+            </div>
+            <a
+            href="https://github.com/amolgupta7/Hope-Speech-Detection"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="../../assets/github_black_icon.png" alt="" />
+          </a>
+          </div>
+          <div class="project-div reveal">
+            <div class="project-name">Downloading files</div>
+            <div class="project-description">
+              Download files from drive using c
+            </div>
+            <a
+                href="https://github.com/amolgupta7/Downloading"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                <img src="../../assets/github_black_icon.png" alt="" />
+              </a>
           </div>
         </div>
       </section>
       <footer class="footer">
-        Made with &nbsp
-        <i class="uil uil-heart" id="icon" style="font-size: 24px"></i>
-        &nbsp by Amol Gupta
+        <span>Made with &nbsp</span>
+        <img src="../../assets/heart_icon.png" alt="" />
+        <span> &nbsp by Amol Gupta</span>
       </footer>
     </main>
   </body>
